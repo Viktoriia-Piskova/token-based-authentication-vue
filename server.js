@@ -70,6 +70,7 @@ app.post('/register', (req, res) => {
 })
 
 app.post('/login', (req, res) => {
+  debugger
   const userDB = fs.readFileSync('./db/user.json')
   const userInfo = JSON.parse(userDB)
   if (
